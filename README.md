@@ -32,19 +32,19 @@ We use direnv to manage environment variables for development. Create a file cal
 
 #### Infrastructure
 
-[x] Add firewall to allow db access from app servers only
-[x] Add firewall to allow only the following app server access: HTTP from load balancer, SSH from anywhere.
-[x] Setup mail sending with MailGun
-[ ] Externalize TF state (use DO spaces?)
-[ ] Use DO spaces for file uploads
-[ ] Automate provisioning of Mastodon app server
-[ ] Implement basic secret management (db creds, mailgun credentials)
-[ ] Harden server (fail2ban, disable root login)
-[ ] Set up monitoring alerting
+- [x] Add firewall to allow db access from app servers only
+- [x] Add firewall to allow only the following app server access: HTTP from load balancer, SSH from anywhere.
+- [x] Setup mail sending with MailGun
+- [ ] Externalize TF state (use DO spaces?)
+- [ ] Use DO spaces for file uploads
+- [ ] Automate provisioning of Mastodon app server
+- [ ] Implement basic secret management (db creds, mailgun credentials)
+- [ ] Harden server (fail2ban, disable root login)
+- [ ] Set up monitoring alerting
 
 #### Site Management
 
-[ ] Create site policy
-[ ] Create a list of banned servers (copy from a large community server as a starting point)
-[ ] Create a "Getting Started" doc aimed at users coming from Twitter.
-[ ] Test, test, test!
+- [ ] Create site policy
+- [ ] Create a list of banned servers (copy from a large community server as a starting point)
+- [ ] Create a "Getting Started" doc aimed at users coming from Twitter.
+- [ ] Test, test, test!

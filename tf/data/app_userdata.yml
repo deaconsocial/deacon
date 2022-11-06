@@ -1,0 +1,18 @@
+# TODO: Template me!
+users:
+  name: andrew
+  groups: sudo
+  shell: /bin/bash
+  sudo: ['ALL=(ALL) NOPASSWD:ALL']
+  ssh-authorized-keys:
+    - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClGR8j6D4SrbLCDp9+8xq+HprduSKhakXUVZTiWBDzBT1Cd3LsNfbTX/3O5b1SqQY6d2EjcD9HyyY5o9rvzdjBD+jCXAoeHNQyx4hHy/mZnCH3MVx2qw4VyPhaNmOxZ8q7yPUiASS9febsS31/62euiBHrQoSDoTgd2PeGxsRO16/hiYQ8YoPmQddB8asxyAN5iCjeUbs4cRrRJ2fmDVCkE5pzixyIIwHp328m/Mvo4YEdDuAFOM5URV13W86jOjpXrNtFoaFP8uL0IIvo9aJx5Ha52FD5qJXbB1yaNo4plkJqAv9LmsPOiS3nNdiDzWLFJFyGoej5ANRkrE0wZBm48zSnFHBBpvAkLqhb9FpQTH7947gCibvDd0LI2fXgSPIpMIN3yQnqWAxkd/IEE4CjyIejyqSVUfEK2AHSkXvjboLxe0yp3dVjTtHT329ZC0u1Y07Zuw82aiSpXKe4Rt/msV0AJ60baH+TE38wULDu696w72voF34Qvel02GxM9ZM= andrew@DESKTOP-G6HF789"
+package_update: true
+package_upgrade: true
+packages:
+  - fail2ban
+  # - curl
+  # - wget
+  # - gnupg
+  # - apt-transport-https
+  # - lsb-release
+  # - ca-certificates

@@ -42,7 +42,8 @@ We use direnv to manage environment variables for development. Create a file cal
 - [ ] Automate provisioning of Mastodon app server
 - [ ] Harden server (fail2ban, disable root login)
 - [ ] Implement basic secret management (db creds, mailgun credentials)
-- [ ] Set up monitoring alerting
+- [ ] Set up monitoring/alerting
+- [ ] Fix pasword field recognition on Chrome (https://twitter.com/quackitude/status/1590775014626037766)
 
 #### Site Management
 

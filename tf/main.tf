@@ -33,6 +33,7 @@ resource "digitalocean_project" "deacon" {
       digitalocean_domain.deacon.urn,
       digitalocean_loadbalancer.deacon-public.urn,
       digitalocean_database_cluster.deacon.urn,
+      "do:space:tf-state.deacon.social"
     ],
   )
 }

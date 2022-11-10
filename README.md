@@ -36,11 +36,12 @@ We use direnv to manage environment variables for development. Create a file cal
 - [x] Add firewall to allow only the following app server access: HTTP from load balancer, SSH from anywhere.
 - [x] Setup mail sending with MailGun
 - [x] Externalize TF state (use DO spaces?)
-- [ ] Use DO spaces for file uploads
-- [ ] Set up full text search with ElasticSearch (on app ser)
+- [x] Use DO spaces for file uploads
+- [x] Fix streaming
+- [ ] ~Set up full text search with ElasticSearch (on app server?)~ search is deliberately not global... and not very useful.
 - [ ] Automate provisioning of Mastodon app server
-- [ ] Implement basic secret management (db creds, mailgun credentials)
 - [ ] Harden server (fail2ban, disable root login)
+- [ ] Implement basic secret management (db creds, mailgun credentials)
 - [ ] Set up monitoring alerting
 
 #### Site Management

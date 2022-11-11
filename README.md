@@ -38,7 +38,7 @@ We use direnv to manage environment variables for development. Create a file cal
 - [x] Externalize TF state (use DO spaces?)
 - [x] Use DO spaces for file uploads
 - [x] Fix streaming
-- [ ] ~Set up full text search with ElasticSearch (on app server?)~ search is deliberately not global... and not very useful.
+- [x] Troubleshoot ~100% memory usage
 - [ ] Automate provisioning of Mastodon app server
 - [ ] Harden server (fail2ban, disable root login)
 - [ ] Implement basic secret management (db creds, mailgun credentials)

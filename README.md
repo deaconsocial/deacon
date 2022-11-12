@@ -39,6 +39,7 @@ We use direnv to manage environment variables for development. Create a file cal
 - [x] Use DO spaces for file uploads
 - [x] Fix streaming
 - [x] Troubleshoot ~100% memory usage
+- [ ] Use (DO-provided) db connection pool. It looks like some requests are failing because no connections are available.
 - [ ] Automate provisioning of Mastodon app server
 - [ ] Harden server (fail2ban, disable root login)
 - [ ] Implement basic secret management (db creds, mailgun credentials)

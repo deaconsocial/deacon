@@ -25,14 +25,14 @@ resource "digitalocean_database_db" "deacon" {
   name       = local.prefix
 }
 
-resource "digitalocean_database_connection_pool" "deacon" {
+/* resource "digitalocean_database_connection_pool" "deacon" {
   cluster_id = digitalocean_database_cluster.deacon.id
   name       = "${local.prefix}-pool"
   mode       = "session"
   size       = 11
   db_name    = digitalocean_database_db.deacon.name
   user       = "doadmin"
-}
+} */
 
 data "digitalocean_database_ca" "deacon" {
   cluster_id = digitalocean_database_cluster.deacon.id

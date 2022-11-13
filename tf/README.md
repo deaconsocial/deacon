@@ -26,3 +26,5 @@ index 6935c4764..1b6eb98e7 100644
 ```
 
 - Needed to do this to deal with two reverse proxies: https://github.com/mastodon/mastodon/issues/899
+- Updated the number of threads and concurrency for Sidekiq to 8 in the systemd unit file.
+  - We should have 2 Puma processes that each keep a db pool of 7 connections and a single sidekiq process with 8 connections.

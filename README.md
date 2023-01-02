@@ -44,11 +44,10 @@ We use direnv to manage environment variables for development. Create a file cal
 - [ ] Harden server (fail2ban, disable root login)
 - [ ] Implement basic secret management (db creds, mailgun credentials)
 - [ ] Set up monitoring/alerting
-- [ ] Fix pasword field recognition on Chrome (https://twitter.com/quackitude/status/1590775014626037766)
 
 #### Site Management
 
 - [x] Create site policy
 - [x] Create a list of banned servers (copy from a large community server as a starting point)
 - [x] Create a "Getting Started" doc aimed at users coming from Twitter.
-- [ ] Test, test, test!
+- [x] Test, test, test!

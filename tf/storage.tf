@@ -3,6 +3,13 @@ resource "digitalocean_spaces_bucket" "uploads" {
   region = var.region
 
   acl = "public-read"
+
+  cors_rule {
+    allowed_methods = ["GET"]
+    allowed_origins = ["https://deacon.social"]
+    max_age_seconds = 600
+  }
+
   versioning {
     enabled = false
   }

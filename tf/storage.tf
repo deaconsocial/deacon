@@ -2,7 +2,7 @@ resource "digitalocean_spaces_bucket" "uploads" {
   name   = "uploads-deacon-social"
   region = var.region
 
-  acl = "public-read"
+  acl = "private"
 
   cors_rule {
     allowed_methods = ["GET"]
@@ -12,7 +12,7 @@ resource "digitalocean_spaces_bucket" "uploads" {
 
   versioning {
     enabled = false
-  }
+  } 
 }
 
 resource "digitalocean_certificate" "cdn" {

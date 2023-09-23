@@ -26,10 +26,8 @@ build {
   provisioner "shell" {
     environment_vars = [
       "DEBIAN_FRONTEND=noninteractive",
-      "RUBY_VERSION=3.0.4",
-      "MASTODON_VERSION=v4.0.2",
     ]
-    script = "./image/provision/01-root.sh"
+    script = "./provision/01-root.sh"
   }
 
   provisioner "file" {
@@ -38,6 +36,24 @@ build {
   }
 
   provisioner "shell" {
-    inline = ["echo This provisioner runs last"]
+    script = "./provision/02-mastodon.sh"
+    execute_command = "sudo -u mastodon sh -c '{{ .Vars }} {{ .Path }}'"
+  }
+
+  provisioner "shell" {
+    environment_vars = [
+      "DEBIAN_FRONTEND=noninteractive",
+      "RUBY_VERSION=3.0.4",
+      "MASTODON_VERSION=v4.1.0",
+    ]
+    script = "./provision/03-mastodon.sh"
+    execute_command = "sudo -u mastodon bash -c '{{ .Vars }} {{ .Path }}'"
+  }
+
+  provisioner "shell" {
+    environment_vars = [
+      "DEBIAN_FRONTEND=noninteractive",
+    ]
+    script = "./provision/04-root.sh"
   }
 }

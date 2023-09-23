@@ -101,8 +101,7 @@ apt install -y \
   g++ libprotobuf-dev protobuf-compiler pkg-config nodejs gcc autoconf \
   bison build-essential libssl-dev libyaml-dev libreadline6-dev \
   zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev \
-  nginx redis-server redis-tools \
-  python3-certbot-nginx libidn11-dev libicu-dev libjemalloc-dev
+  nginx redis-server redis-tools libidn11-dev libicu-dev libjemalloc-dev
 
 # Install yarn.
 corepack enable

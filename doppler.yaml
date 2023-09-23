@@ -1,0 +1,3 @@
+setup:
+  project: deacon-config
+  config: dev
